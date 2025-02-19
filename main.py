@@ -20,6 +20,8 @@ def handle_events():
     return True  
 
 def main(screen):
+    screen = init_game()
+    clock = pygame.clock.Clock() # Initialize the clock object
     
     start_pos1 = [150, 150]
     end_pos1 = [350, 500]
@@ -63,6 +65,8 @@ def main(screen):
         pygame.draw.line(screen, line_color5, start_pos5, end_pos5, line_thickness5)
 
         pygame.display.flip()  
+
+        clock.tick(config.FPS)
 
     pygame.quit() 
     sys.exit()  

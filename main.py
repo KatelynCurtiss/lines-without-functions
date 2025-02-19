@@ -71,5 +71,4 @@ def main(screen):
     pygame.quit() 
     sys.exit()  
 if __name__ == "__main__":
-    screen = init_game()  
-    main(screen)  
+    main()  

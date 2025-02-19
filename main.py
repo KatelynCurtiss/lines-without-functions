@@ -19,7 +19,7 @@ def handle_events():
                 return False  
     return True  
 
-def main(screen):
+def main():
     screen = init_game()
     clock = pygame.clock.Clock() # Initialize the clock object
     
